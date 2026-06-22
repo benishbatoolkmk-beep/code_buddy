@@ -44,4 +44,4 @@ age = int(input("enter your age:"))
 if age >= 18:
     print("entry allowed")
 else:
-    print("entry denied")
+    print("entry denied3")
