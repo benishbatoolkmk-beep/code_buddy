@@ -1,146 +1,114 @@
-#1.HTML Introduction
-<!DOCTYPE html> 
-<html>
-    <body>
-         Benish Rajpoot
-    </body> 
-        
-</html>
-#2. Structure
-<!DOCTYPE html>
-<html> 
-    <head>
-        <title>My First Web Page</title>
-    </head>
-    <body>
-        <h1>Welcome to My Web Page</h1>
-        <p>This is a paragraph of text on my first web page.</p>
-    </body>
-</html>
-#3. Headings
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>This is a Heading 1</h1>
-        <h2>This is a Heading 2</h2>
-        <h3>This is a Heading 3</h3>
-        <h4>This is a Heading 4</h4>
-        <h5>This is a Heading 5</h5>
-        <h6>This is a Heading 6</h6>
-    </body>
-</html>
-#4. Paragraphs
-<!DOCTYPE html>
-<html>
-    <body>
-        <p>This is a paragraph of text on my first web page.</p>
-    </body>
-</html>
-#5. Formatting Tags
-<!DOCTYPE html>
-<html>
-    <body>
-        <p>This is a <b>bold</b> word.</p>
-        <p>This is an <i>italic</i> word.</p>
-        <p>This is an <u>underlined</u> word.</p>
-    </body>
-</html>
-#6. Links
-<!DOCTYPE html>
-<html>
-    <body>
-        <a href="https://www.google.com">Visit Google</a>
-    </body>
-</html>
-#7. Images
-<!DOCTYPE html>
-<html>
-    <body>
-        <img src="image.jpg" alt="Description of image">
-    </body>
-</html>
-#8. Lists
-<!DOCTYPE html>
-<html>
-    <body>
-        <h2>Unordered List</h2>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <h2>Ordered List</h2>
-        <ol>
-            <li>First Item</li>
-            <li>Second Item</li>
-            <li>Third Item</li>
-        </ol>
-    </body>
-</html>
-#9. Tables
-<!DOCTYPE html>
-<html>
-    <body>
-        <table border="1">
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>30</td>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>25</td>
-                <td>Los Angeles</td>
-            </tr>
-        </table>
-    </body>
-</html>
-#10. Semantic HTML
-<!DOCTYPE html>
-<html>
-    <body>
-        <header>
-            <h1>My Website</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section id="home">
-                <h2>Welcome to My Website</h2>
-                <p>This is the home section of my website.</p>
-            </section>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>This section contains information about me.</p>
-            </section>
-            <section id="contact">
-                <h2>Contact Information</h2>
-                <p>You can contact me at benishbatoolkmk@gmail.com.</p>
-            </section>
-        </main>
-    </body>
-</html>
-#11. Forms
-<!DOCTYPE html>
-<html>
-    <body>
-        <h2>Contact Form</h2>
-        <form action="/submit_form" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </body>
+<head>
+    <title>My Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Welcome to My Profile Website</h1>
+    <p>This website is created using HTML practice features.</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about">About</a> |
+    <a href="#education">Education</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#table">Data Table</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<hr>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>My name is <b>Benish Rajpoot</b>. I am an <i>Information Technology student</i>.</p>
+    <p>I am learning <u>HTML, CSS and Web Development</u>.</p>
+</section>
+
+<hr>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li>Matriculation - Science Group</li>
+        <li>Intermediate - ICS (Continue)</li>
+    </ul>
+</section>
+
+<hr>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ol>
+        <li>HTML Basics</li>
+        <li>CSS Basics</li>
+        <li>Git & GitHub Basics</li>
+        <li>MS Office</li>
+    </ol>
+</section>
+
+<hr>
+
+<!-- TABLE -->
+<section id="table">
+    <h2>Student Data Table</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Benish</td>
+            <td>Web Development</td>
+            <td>Gujranwala</td>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>Python</td>
+            <td>Lahore</td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<!-- FORM -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form action="/submit_form" method="post">
+
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Message:</label><br>
+        <input type="text" name="message"><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<hr>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 My Student Profile Website | Created for HTML Practice</p>
+</footer>
+
+</body>
 </html>
