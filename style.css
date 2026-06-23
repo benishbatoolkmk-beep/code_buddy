@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete CSS Practice</title>
+
+    <style>
+
+        /* CSS Comment */
+
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+        }
+
+        /* Class Selector */
+        .box {
+            background-color: white;
+            border: 2px solid green;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* ID Selector */
+        #special {
+            color: purple;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        img {
+            border: 3px solid black;
+            margin-top: 10px;
+            width: 200px;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        ul {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid gray;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to CSS Practice</h1>
+
+    <p>This is a simple paragraph styled using CSS.</p>
+
+    <button>Click Me</button>
+
+    <div class="box">
+        <h2>CSS Features</h2>
+
+        <p id="special">
+            This text is styled using an ID selector.
+        </p>
+
+        <p class="error">
+            Error: Invalid input!
+        </p>
+
+        <img src="https://via.placeholder.com/200" alt="Sample Image">
+
+        <p>
+            Visit
+            <a href="https://www.google.com">Google</a>
+        </p>
+
+        <h3>My Hobbies</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Coding</li>
+            <li>Sleeping</li>
+        </ul>
+
+        <p>
+            Width of image is <strong>200px</strong> (CSS Unit).
+        </p>
+
+    </div>
+
+</body>
+</html>
