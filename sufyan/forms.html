@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    
+    <form action="submit_form.php" method="post">
+        
+        <!-- Name -->
+        <p>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" placeholder="Sufyan" required>
+        </p>
+
+        <!-- Email -->
+        <p>
+            <label>Email Address:</label><br>
+            <input type="email" name="email" placeholder="sufyan@example.com" required>
+        </p>
+
+        <!-- Password -->
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </p>
+
+        <!-- Phone Number -->
+        <p>
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone" placeholder="+92 3262300002" required>
+        </p>
+
+        <!-- Date of Birth -->
+        <p>
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob" placeholder="YYYY-MM-DD">
+        </p>
+
+        <!-- Gender (Radio Buttons) -->
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <input type="radio" name="gender" value="prefer_not_to_say"> Prefer not to say
+        </p>
+        </p>
+        <!-- Hobbies (Checkboxes) -->
+    <p>      
+             <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobbies" value="reading"> Reading
+            <input type="checkbox" name="hobbies" value="traveling"> Traveling
+            <input type="checkbox" name="hobbies" value="gaming"> Gaming
+
+    </p>
+        <!-- Country (Dropdown) -->
+        <p>
+            <label>Country:</label><br>
+            <select name="country">
+                <option value="pakistan">Pakistan</option>
+                <option value="saudi">Saudi Arabia</option>
+                <option value="uae">UAE</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="other">Azerbijan</option>
+                <option value="other">Garmany</option>
+                <option value="other">Other</option>           
+
+
+            </select>
+        </p>
+
+        <!-- Message (Textarea) -->
+        <p>
+            <label>Write your message:</label><br>
+            <textarea name="message" rows="4" cols="30" placeholder="Enter your message here..."></textarea>
+        </p>
+
+        <!-- Buttons -->
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
