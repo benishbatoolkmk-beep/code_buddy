@@ -1,2 +1,0 @@
-#my first practice code 
-#VARIABLE IS LIKE A CONTAINER UESD TO STORE VALUE OR DATA

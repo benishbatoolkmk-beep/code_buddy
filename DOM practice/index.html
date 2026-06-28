@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DOM Practice</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+    h1 { color: #2563eb; }
+    .highlight { background: yellow; }
+    .box { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 6px; }
+    button { padding: 8px 14px; margin: 4px; cursor: pointer; }
+    li { padding: 4px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== SECTION 1: Selecting elements ===== -->
+  <h1 id="mainTitle">Hello DOM</h1>
+  <p id="para1">This is a paragraph. We are going to select.</p>
+
+  <!-- ===== SECTION 2: Changing content ===== -->
+  <div class="box">
+    <p>show name here: <span id="nameDisplay">---</span></p>
+    <input type="text" id="nameInput" placeholder="enter your name">
+    <button id="changeNameBtn">Update Name</button>
+  </div>
+
+  <!-- ===== SECTION 3: Changing style / classList ===== -->
+  <div class="box">
+    <p id="colorText">will change color/background of this text.</p>
+    <button id="toggleHighlightBtn">Highlight Toggle</button>
+  </div>
+
+  <!-- ===== SECTION 4: Events (click counter) ===== -->
+  <div class="box">
+    <p>Button click count: <span id="counterDisplay">0</span></p>
+    <button id="counterBtn">Click Me</button>
+  </div>
+
+  <!-- ===== SECTION 5: Adding / removing list items ===== -->
+  <div class="box">
+    <input type="text" id="taskInput" placeholder="write new task here">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
