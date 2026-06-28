@@ -6,7 +6,7 @@ car_cascade = cv2.CascadeClassifier(haar_cascade)
 if car_cascade.empty():
     raise Exception("Error loading Haar cascade file.")
 
-video = 'car_video.avi'
+video = 'car-video.mp4'
 cap = cv2.VideoCapture(video)
 
 if not cap.isOpened():
@@ -36,7 +36,8 @@ while cap.isOpened():
 
     cv2.imshow('video', frames)
 
-    if cv2.waitKey(33) == 27: 
+    if cv2.waitKey(33) & 0xFF == 27:
         break
-    cap.release()  
+
+cap.release()
 cv2.destroyAllWindows()

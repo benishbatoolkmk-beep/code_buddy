@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Full Practice File</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f6f9;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .box {
+            padding: 10px;
+            background: #ecf0f1;
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>HTML Full Practice Website</h1>
+    <p>All HTML topics in one file</p>
+
+    <nav>
+        <a href="#text">Text</a>
+        <a href="#list">Lists</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a>
+    </nav>
+</header>
+
+<!-- TEXT PRACTICE -->
+<section id="text">
+    <h2>1. Headings & Paragraphs</h2>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <p>This is a paragraph example.</p>
+
+    <div class="box">
+        This is a div box example.
+        <span style="color:red;">This is span text.</span>
+    </div>
+
+    <p><b>Bold</b> | <i>Italic</i> | <u>Underline</u></p>
+</section>
+
+<!-- LINKS & IMAGES -->
+<section>
+    <h2>2. Links & Images</h2>
+
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+
+    <br><br>
+
+    <img src="https://via.placeholder.com/300" alt="Sample Image">
+</section>
+
+<!-- LISTS -->
+<section id="list">
+    <h2>3. Lists</h2>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+    </ul>
+</section>
+
+<!-- TABLE -->
+<section id="table">
+    <h2>4. Table Practice</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>HTML</td>
+            <td>Gujranwala</td>
+        </tr>
+
+        <tr>
+            <td>Sara</td>
+            <td>CSS</td>
+            <td>Lahore</td>
+        </tr>
+    </table>
+</section>
+
+<!-- FORM -->
+<section id="form">
+    <h2>5. Forms Practice</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JS
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- SEMANTIC TAGS -->
+<section>
+    <h2>6. Semantic Tags</h2>
+
+    <article class="box">
+        <h3>Article Example</h3>
+        <p>This is article content.</p>
+    </article>
+
+    <aside class="box">
+        This is aside content.
+    </aside>
+</section>
+
+<!-- AUDIO / VIDEO -->
+<section>
+    <h2>7. Media</h2>
+
+    <p>Audio Example:</p>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+
+    <p>Video Example:</p>
+    <video width="300" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#2c3e50; color:white; text-align:center; padding:10px;">
+    <p>© 2026 HTML Practice File | Made for Learning</p>
+</footer>
+
+</body>
+</html>

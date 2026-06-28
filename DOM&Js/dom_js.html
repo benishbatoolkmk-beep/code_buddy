@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>DOM Practice</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+padding:30px;
+}
+
+.box{
+border:2px solid black;
+padding:20px;
+width:400px;
+margin:auto;
+}
+
+button{
+padding:10px;
+margin:10px;
+}
+
+input{
+padding:8px;
+margin:8px;
+}
+
+#paragraphArea{
+margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1 id="heading">
+DOM Practice
+</h1>
+
+
+<input
+type="text"
+id="name"
+placeholder="Enter Name">
+
+<br>
+
+<button onclick="changeText()">
+Change Text
+</button>
+
+<button onclick="changeColor()">
+Blue
+</button>
+
+<button onclick="resetColor()">
+White
+</button>
+
+<button onclick="showName()">
+Show Name
+</button>
+
+<br><br>
+
+
+<input
+type="text"
+id="paraInput"
+placeholder="Write Paragraph">
+
+<br>
+
+<button onclick="addPara()">
+Add Paragraph
+</button>
+
+<button onclick="removePara()">
+Remove Paragraph
+</button>
+
+<button onclick="removeText()">
+Remove
+</button>
+
+
+<h2 id="result">
+</h2>
+
+<div id="paragraphArea">
+
+</div>
+
+
+<p id="delete">
+Delete Me
+</p>
+
+</div>
+
+
+<script>
+
+
+function changeText(){
+
+let heading=
+
+document
+.getElementById(
+"heading"
+);
+
+if(
+heading.innerHTML
+==="DOM Practice"
+){
+
+heading.innerHTML=
+"Welcome";
+
+}
+
+else{
+
+heading.innerHTML=
+"DOM Practice";
+
+}
+
+}
+
+
+
+function changeColor(){
+
+document.body
+.style.background=
+"lightblue";
+
+}
+
+
+
+function resetColor(){
+
+document.body
+.style.background=
+"white";
+
+}
+
+
+
+function showName(){
+
+let user=
+
+document
+.getElementById("name")
+.value;
+
+document
+.getElementById("result")
+.innerHTML=
+user;
+
+}
+
+
+
+function addPara(){
+
+let text=
+
+document
+.getElementById("paraInput")
+.value;
+
+if(text===""){
+
+return;
+
+}
+
+let p=
+
+document
+.createElement("p");
+
+p.innerHTML=text;
+
+document
+.getElementById(
+"paragraphArea"
+)
+.appendChild(p);
+
+document
+.getElementById(
+"paraInput"
+)
+.value="";
+
+}
+
+
+
+function removePara(){
+
+document
+.getElementById(
+"paragraphArea"
+)
+.innerHTML="";
+
+}
+
+
+
+function removeText(){
+
+document
+.getElementById(
+"result"
+)
+.innerHTML="";
+
+document
+.getElementById(
+"name"
+)
+.value="";
+
+let x=
+
+document
+.getElementById(
+"delete"
+);
+
+if(x){
+
+x.style.display=
+"none";
+
+}
+
+}
+
+
+</script>
+
+</body>
+
+</html>
