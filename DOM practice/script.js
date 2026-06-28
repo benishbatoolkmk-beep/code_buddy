@@ -22,11 +22,12 @@ const changeNameBtn = document.getElementById("changeNameBtn");
 changeNameBtn.addEventListener("click", function () {
   const typedName = nameInput.value; 
 
-  if (typedName.trim() === "") {
+/*if (typedName.trim() === "") {
     nameDisplay.textContent = "(Aap ne kuch nahi likha)";
   } else {
     nameDisplay.textContent = typedName;  
-  }
+  } */
+ nameDisplay.textContent = typedName.trim() === "" ? "(Aap ne kuch nahi likha)" : typedName;
 });
  
  
