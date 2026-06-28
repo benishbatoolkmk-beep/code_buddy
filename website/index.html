@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI HCI Controller</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="AI HCI Controller home">
+      <span class="brand-mark">AI</span>
+      <span>
+        <strong>AI HCI Controller</strong>
+        <small>Hands-free Windows control</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#signup">Signup</a>
+      <a href="#team">Our Team</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <main id="top" class="center-container">
+    <section class="hero user-hero centered-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Accessibility focused final year project</p>
+        <h1>Control your computer with hand gestures and eye movement</h1>
+        <p class="hero-desc">Download the Windows prototype, try the camera-based controller, and share feedback to help improve the next version.</p>
+        
+        <div class="hero-actions">
+          <a class="primary-link" href="#signup">Create free account</a>
+          <a class="secondary-link" href="#download">Go to download</a>
+        </div>
+        
+        <div class="hero-badges" aria-label="Highlights">
+          <span><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg> Gesture AI</span>
+          <span><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> Eye gaze</span>
+          <span><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg> Local control</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="metric-section">
+      <div class="metric-row">
+        <div class="metric-card">
+          <span class="metric-icon">✨</span>
+          <strong>Move</strong>
+          <p>Seamless cursor tracking</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-icon">⚡</span>
+          <strong>Click</strong>
+          <p>Intelligent gesture actions</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-icon">🔄</span>
+          <strong>Scroll</strong>
+          <p>Smooth natural scrolling</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section">
+      <div class="section-header">
+        <p class="eyebrow">Project Development</p>
+        <h2>Collaboration & Research</h2>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="group1.jpeg.jpg" alt="Team Work 1">
+          </div>
+          <h3>System Planning</h3>
+          <p>Designing the computer vision pipeline and model synchronization mapping.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="group2.jpeg.jpg" alt="Team Work 2">
+          </div>
+          <h3>Testing & Calibration</h3>
+          <p>Fine-tuning OpenCV and MediaPipe scripts for perfect real-time gesture latency.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="group3.jpeg.jpg" alt="Team Work 3">
+          </div>
+          <h3>HCI Optimization</h3>
+          <p>Structuring user tests to improve hands-free interaction for everyday use.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" class="action-zone-wrapper">
+      <div class="grid two user-flow">
+        <form id="signupForm" class="panel highlight-panel">
+          <p class="eyebrow">Step 1</p>
+          <h2>Create your account</h2>
+          <label>
+            Full name
+            <input id="fullName" name="fullName" autocomplete="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            Email
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+          <label>
+            Role
+            <select id="role" name="role">
+              <option>Student</option>
+              <option>Teacher</option>
+              <option>Researcher</option>
+              <option>User</option>
+            </select>
+          </label>
+          <button type="submit">Unlock download</button>
+          <p id="signupMessage" class="message" aria-live="polite"></p>
+        </form>
+
+        <section id="download" class="panel download-panel">
+          <p class="eyebrow">Step 2</p>
+          <h2>Download Windows app</h2>
+          <p id="downloadGate">Signup is required before downloading the software.</p>
+          <a id="downloadBtn" class="download disabled" href="#" download>Download EXE</a>
+          <ul class="check-list">
+            <li>Windows 10/11</li>
+            <li>Webcam required</li>
+            <li>Runs locally on your computer</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Privacy note: this demo portal stores signup, download, and rating data securely.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
